@@ -36,7 +36,7 @@ $baseWidth: 4.166667%;
 
 
 @for $i from 1 through 24 {
-	.col-#{$id} {
+	.col-#{$i} {
 		flex-basis: $baseWidth * $i;
 		max-width: $baseWidth * $i;
 	}
