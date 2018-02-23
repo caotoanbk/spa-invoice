@@ -113,7 +113,7 @@ class InvoiceController extends Controller
 
         public function update($id, Request $request)
 		    {
-		    	$invoice = Invoice::findOrFail($id)
+		    	$invoice = Invoice::findOrFail($id);
 
 		    	$this->validate([
 		    		'customer_id' => 'required|integer|exits:customers,id',

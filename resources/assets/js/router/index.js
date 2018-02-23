@@ -1,12 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-
 Vue.use(VueRouter)
-
-
 const router = new VueRouter({
-	router: [
+	routes: [
 		{path: '/', redirect: '/invoices'},
 		{path: '/invoices', component: require('../views/invoices/index.vue')},
 		{path: '/invoices/create', component: require('../views/invoices/form.vue')},
