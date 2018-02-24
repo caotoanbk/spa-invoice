@@ -61,6 +61,7 @@
 		beforeRouteEnter(to, from, next) {
 			get('/api/invoices', to.query)
 			.then((res) => {
+				console.log(res)
 				next(vm => vm.setData(res))
 			})
 		},
